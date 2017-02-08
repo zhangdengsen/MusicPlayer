@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fm_run_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.v5188.musicplayer.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_zhu1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/ImageView_zhutifanghui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/fanghui" />
+
+        <TextView
+            android:id="@+id/TextView_zhutigeming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/ImageView_zhutifanghui"
+            android:text="歌名"
+            android:textColor="@color/zitiyanse"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/TextView_zhutigeshou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextView_zhutigeming"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ImageView_zhutifanghui"
+            android:singleLine="true"
+            android:text="歌手"
+            android:textColor="@color/zitiyanse"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/ImageView_zhutilianjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/lianjie" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_zhu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ImageView_xiaoyuandian_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ImageView_xiaoyuandian_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_0"
+            android:gravity="center">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shoucang3"
+                android:button="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/xiazai" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/pinglun" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/gengduo" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_1">
+
+            <TextView
+                android:id="@+id/TextView_dangqianshijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="00:00"
+                android:textColor="@color/zitiyanse"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/TextView_zongshijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="00:00"
+                android:textColor="@color/zitiyanse"
+                android:textSize="10dp" />
+
+            <SeekBar
+                android:id="@+id/SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/TextView_zongshijian"
+                android:layout_toRightOf="@id/TextView_dangqianshijian" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeLayout_0">
+
+            <ImageView
+                android:id="@+id/ImageView_moshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/shunxun" />
+
+            <ImageView
+                android:id="@+id/ImageView_caidan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/gedan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ImageView_caidan"
+                android:layout_toRightOf="@id/ImageView_moshi"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ImageView_shang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/shang" />
+
+                <ImageView
+                    android:id="@+id/ImageView_baofang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/bofang" />
+
+                <ImageView
+                    android:id="@+id/ImageView_xia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/xia" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/RelativeLayout_zhu2"
+        android:layout_below="@id/RelativeLayout_zhu1" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <com.thinkcool.circletextimageview.CircleTextImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/lay_protype_default"
+        app:citv_border_color="#ffffff"
+        app:citv_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/profile_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView_listview_geming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌名"
+            android:textColor="@color/zitiyanse" />
+
+        <TextView
+            android:id="@+id/TextView_listview_geshou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="歌手"
+            android:textColor="@color/zitiyanse"
+            android:textSize="10dp" />
+    </LinearLayout>
+</RelativeLayout>
